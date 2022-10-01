@@ -138,6 +138,10 @@
 	outline: 4px dotted rgba(237, 104, 2, 0.867);
 }
 /* ----------------------------------------------- */
+.target-body{
+	margin: 0 0 10px 0;
+	background-color: #e3e3e3;
+}
 .list-2{
 	margin-bottom: 20px;
 	display: none;
@@ -157,10 +161,12 @@
 	color: #00b3ff;
 }
 /* ----------------------------------------------- */
+.wrapper__inner{
+	margin-bottom: 50px;
+}
 .block-lorem{
 	font-weight: 700;
 	font-size: 20px;
-	margin-bottom: 50px;
 }
 .block-lorem p:first-of-type{
 	color:red;
@@ -377,4 +383,28 @@
 .game-win-img img:hover{
 	display: inline-block;
 	margin: -600px 0 0 0;
+}
+
+
+/* ----------------------------------------------- */
+
+.nav {
+}
+.nav__link{
+	background: #b51616;
+}
+.nav__link:target {
+	background: #16b566;
+}
+.wrapper__inner{
+	display: none;
+}
+.game{
+	display: none;
+}
+#homework.nav__link:target ~ .wrapper__inner {
+	display: block;
+}
+#game.nav__link:target ~ .game {
+	display: block;
 }
